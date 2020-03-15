@@ -1,22 +1,15 @@
 class Solution {
     public String generateTheString(int n) {
         
-        StringBuilder builder = new StringBuilder(n);
-		if (n ==0) {
-			return "";
-		}
-		else if (n%2 == 1) {
-			for (int i =0 ; i<n; i++) {
-				builder.append("a");
-			}
-		} else {
-			for (int i =0 ; i<n-1; i++) {
-				builder.append("a");
-			}
-			builder.append("b");
-		}
-	
-	return builder.toString();
+        char arr[] = new char[n];
+
+        for (int i = 0; i < n; i++)
+            arr[i] = 'p';
+
+        if (n % 2 == 0)
+            arr[n - 1] = 'z';
+        
+        return new String(arr);
         
     }
 }

@@ -8,6 +8,7 @@ class Solution {
 			result[i] = list.indexOf(Integer.valueOf(nums[i]));
 		}
 		return result; 
+
 		
     }
 }
